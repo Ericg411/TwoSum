@@ -8,11 +8,34 @@ namespace TwoSum
         //return indices of the two numbers such that they add up to target.
         static void Main(string[] args)
         {
-            Console.WriteLine("");
-            
+            //TEST CASES
+            //feel free to change any of these to test my work!
+            int[] test1 = { 2, 7, 11, 15 };
+            foreach (int num in TwoSum(test1, 9)) //expected [0,1]
+            {
+                Console.Write($"{num}, ");
+            }
+
+            Console.WriteLine("\n");
+
+            int[] test2 = { 3, 2, 4 };
+            foreach (int num in TwoSum(test2, 6)) //expected [1,2]
+            {
+                Console.Write($"{num}, ");
+            }
+
+            Console.WriteLine("\n");
+
+            int[] test3 = { 3, 3 };
+            foreach (int num in TwoSum(test3, 6)) //expected [0,1]
+            {
+                Console.Write($"{num}, ");
+            }
+
+
         }
 
-        public int[] TwoSum(int[] nums, int target)
+        public static int[] TwoSum(int[] nums, int target)
         {
             for (int i = 0; i < nums.Length; i++)
             {
