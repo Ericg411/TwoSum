@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.Intrinsics.X86;
 
 namespace TwoSum
 {
@@ -6,6 +7,8 @@ namespace TwoSum
     {
         //Given an array of integers nums and an integer target, 
         //return indices of the two numbers such that they add up to target.
+        //You may assume that each input would have exactly one solution, 
+        //and you may not use the same element twice.
         static void Main(string[] args)
         {
             //TEST CASES
